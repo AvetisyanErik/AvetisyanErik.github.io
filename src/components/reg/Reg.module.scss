@@ -1,0 +1,93 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.reg {
+    display: flex;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    .reg1 {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        h1 {
+            font-size: 20px;
+        }
+        .inp {
+            width: 100%;
+            text-align: start;
+            label {
+                padding-right: 15px;
+            }
+        }
+        .input {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(128, 128, 128, 0.2);
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 2px;
+            span{
+                cursor: pointer;
+            }
+            .arrow {
+                color: rgba(128, 128, 128, 0.685);
+                padding-top: 4px;
+                margin-left: 5px;
+            }
+            input {
+                width: 85%;
+                height: 48px;
+                border: none;
+                outline: none;
+                padding-left: 5px;
+                font-size: 16px;
+                &::placeholder {
+                    color: rgba(128, 128, 128, 0.763);
+                    font-size: 16px;
+                }
+            }
+        }
+        button {
+            width: 70%;
+            height: 45px;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            background-color: #0c72ea;
+            font-size: 16px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+        .checkNum{
+            width: 60px;
+            position: absolute;
+            border: 1px solid gray;
+            bottom: -95px;
+            left: 60px;
+            text-align: end;
+            background-color: white;
+            p{
+                padding: 2px;
+                &:hover{
+                    background-color: gray;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

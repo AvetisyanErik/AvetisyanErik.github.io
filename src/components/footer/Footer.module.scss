@@ -1,0 +1,26 @@
+.footer{
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
+    background-color: #fafafa;
+    .footer1{
+    p{
+            font-size: 12px;
+        }
+    }
+    .footer2{
+        display: flex;
+        gap: 30px;
+        p{
+            font-size: 12px;
+            cursor: pointer;
+            &:hover{
+                color: #0c72ea;
+            }
+        }
+    }
+
+}

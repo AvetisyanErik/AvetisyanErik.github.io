@@ -1,0 +1,140 @@
+.business {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    .businpage {
+        cursor: pointer;
+        p {
+            font-size: 20px;
+            padding-bottom: 20px;
+
+            .icon {
+                position: relative;
+                top: 5px;
+            }
+            &:hover {
+                color: #0c72ea;
+            }
+        }
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 20px;
+        .card1 {
+            display: grid;
+            cursor: pointer;
+            grid-template-columns: 1fr;
+            gap: 5px;
+            &:hover {
+                opacity: 0.9;
+            }
+            .img {
+                width: 130px;
+                height: 120px;
+                border-radius: 20px;
+                box-shadow: 0 0 3px 3px rgba(200, 200, 200, 0.2);
+            }
+            .img1 {
+                margin: auto;
+                align-self: center;
+                height: 30px;
+                width: 55px;
+            }
+        }
+    }
+}
+.businpage1 {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    cursor: pointer;
+    p {
+        font-size: 20px;
+        .icon {
+            position: relative;
+            top: 5px;
+        }
+        &:hover {
+            color: #0c72ea;
+        }
+    }
+}
+.business1 {
+    @extend .business;
+    display: grid;
+    grid-row-gap: 25px;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    .cards {
+        display: grid;
+        gap: 5px;
+        cursor: pointer;
+        &:hover {
+            color: #0c72ea;
+            opacity: 0.9;
+        }
+    }
+    h5 {
+        font-size: 15px;
+    }
+    p {
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    span {
+        width: 100%;
+        color: rgba(0, 0, 0, 0.548);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 14px;
+    }
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+.business2 {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    padding: 50px 100px 30px 100px;
+    .cards1 {
+        display: grid;
+        gap: 5px;
+        cursor: pointer;
+        &:hover {
+            color: #0c72ea;
+            opacity: 0.9;
+        }
+        h5 {
+            font-size: 15px;
+        }
+        p {
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        span {
+            width: 100%;
+            color: rgba(0, 0, 0, 0.548);
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 14px;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
